@@ -7,7 +7,7 @@ const guestbook = {
   get() {
     return $.ajax({
       type: 'GET',
-      url: `${apiUrl}/entries`,
+      url: `https://aef0b23d.us-south.apiconnect.appdomain.cloud/guestbook/entries`,
       dataType: 'json'
     });
   },
