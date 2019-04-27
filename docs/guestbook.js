@@ -1,13 +1,13 @@
 /**
  * Web application
  */
-const apiUrl = 'https://service.us.apiconnect.ibmcloud.com/gws/apigateway/api/CHANGEME/guestbook';
+const apiUrl = 'https://aef0b23d.us-south.apiconnect.appdomain.cloud/guestbook';
 const guestbook = {
   // retrieve the existing guestbook entries
   get() {
     return $.ajax({
       type: 'GET',
-      url: `https://aef0b23d.us-south.apiconnect.appdomain.cloud/guestbook/entries`,
+      url: `${apiUrl}/entries`,
       dataType: 'json'
     });
   },
